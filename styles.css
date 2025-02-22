@@ -1,0 +1,81 @@
+/* Header Styles */
+header {
+    background-color:#E8C300; /* dUBOIS gOLD+ for trust and reliability */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+header img {
+    width: 180px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Wrap navigation items on smaller screens */
+    justify-content: center; /* Center items for a balanced layout */
+    margin-top: 10px; /* Add spacing between logo and menu */
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Add padding for better touch usability */
+    border-radius: 5px; /* Optional: Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #f1c40f; /* Highlight on hover */
+}
+
+/* Responsive Navigation for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    header nav ul {
+        width: 100%; /* Take full width */
+        justify-content: space-between; /* Spread buttons across the width */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    header nav ul li a {
+        padding: 15px 10px; /* Larger touch area for mobile */
+        text-align: center; /* Center-align text */
+        width: 100%; /* Full-width buttons for better readability */
+    }
+}
+
+.custom-bullets {
+    list-style-type: disc; /* Standard bullet style */
+    padding-left: 20px; /* Ensures bullets are properly positioned */
+}
+
+.custom-bullets li {
+    color: black; /* Keeps text black */
+    font-size: 16px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.custom-bullets li::before {
+    content: "●"; /* Custom bullet symbol */
+    color: #dc143c; /* Red bullet color */
+    font-size: 18px;
+    position: absolute;
+    left: -20px; /* Adjust positioning */
+}
