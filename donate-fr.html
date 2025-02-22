@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Écoles Citoyennes, Un programme innovant qui valorise le leadership, l'engagement citoyen et le patrimoine haïtien au sein des établissements scolaires en Haiti.">
+    <meta name="keywords" content="Haiti, Éducation civique, Engagement citoyen, Inclusion sociale, Participation communautaire, Apprentissage actif, Développement durable, Leadership éducatif, Responsabilité sociale, Égalité des chances, Innovation pédagogique, Valeurs démocratiques, Autonomisation des jeunes">
+    <meta name="author" content="Écoles Citoyennes">
+    <title>Écoles Citoyennes</title>
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="mennanmen_logo_TEXT.png">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           color: #002400;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: "#FFE55A";
+            border-bottom: 1px solid #006400;
+        }
+
+        header img {
+            height: 200px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+
+        }
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-5%, -5%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.6em;
+        }
+
+        .hero .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-buttons a {
+            padding: 10px 20px;
+            background-color: #A3C7A3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            padding: 20px;
+		
+        }
+    <!-- background-color: #FFE871; -->
+        
+        section h2 {
+        font-size: 1.8em;   
+	text-align: center;
+            color: #002400;
+        }
+ 	section p {
+            font-size: 1.4em;
+        }
+        footer {
+            background-color: #A3C7A3;;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #A3C7A3;;
+            margin-top: 20px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #CCE0CC;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #002400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="Ecole Citoyenne LOGO.png" alt="Ecole Citoyenne LOGO">
+        <nav>
+            <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="apropos.html">À Propos</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+        </ul>
+        </nav>
+        <select id="languageSwitcher">
+            <option value="fr" selected>Francais</option>
+            <option value="ht">Kreol</option>
+        </select>
+            <div class="cta-buttons">
+                <a href="donate-fr.html">Faire un Don</a>
+                <a href="get_involved-fr.html">S'engager</a>
+                <a href="about-fr.html">En Savoir Plus</a>
+            </div>
+    </header>
+
+<!-- Hero Section -->
+<div class="hero">
+    <img src="hero banner.jpg" alt="hero banner">
+    <div class="hero-text">
+        <h1>Montrer le Chemin, Forger des Leaders</h1>
+        <p>Nous lançons un projet ambitieux pour l’éducation citoyenne en Haïti : le Challenge des Écoles Citoyennes.</p>
+        <p>Notre objectif est de mobiliser <span class="highlight">600 écoles en 6 mois</span> et d’engager des milliers d’élèves dans une transformation sociale.</p>
+        <p>Un programme innovant qui valorise le leadership, l'engagement citoyen et le patrimoine haïtien au sein des établissements scolaires.</p>
+    </div>
+</div>
+
+
+ <!-- Other header content like logo and navigation menu -->
+  <select id="languageSwitcher">
+            <option value="fr" selected>Francais</option>
+            <option value="ht">Kreol</option>
+        </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Faire un Don</h1>
+            <p>Votre générosité permet à ÉCOLES CITOYENNES d’aider les jeunes défavorisés à accéder au programme au meme titre que ceux plus privilégiés </p>
+        </section>
+
+        <section class="donate-section">
+            <div class="container">
+                <h2>Soutenez notre mission</h2>
+                <p>Chaque don contribue directement à nos programmes.</p>
+
+                <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                    <!-- Replace YOUR_PAYPAL_BUTTON_ID with the actual PayPal button ID -->
+                    <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+                    <button type="submit" class="button">Faire un Don avec PayPal</button>
+                </form>
+                
+                <p style="margin-top: 20px;">Vous pouvez également effectuer un virement bancaire. Contactez-nous à : <a href="mailto:info-mennanmen@gmail.com">info-mennanmen@gmail.com</a> pour plus de détails.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OPÉRATION MEN NAN MEN | Tous droits réservés</p>
+        <p>Suivez-nous : 
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> | 
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a> | 
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </p>
+    </footer>
+<!-- Include in the head or just before the closing body tag -->
+   <script>
+    document.getElementById('languageSwitcher').addEventListener('change', function () {
+        const language = this.value; // Get selected language
+        const currentPage = window.location.pathname.split('/').pop(); // Get current page name
+
+        // If the current page name does not match the pattern, handle fallback
+        const baseName = currentPage.includes('-') ? currentPage.split('-')[0] : currentPage.split('.')[0];
+
+        // Construct the new page URL with the selected language
+        const newPage = `${baseName}-${language}.html`;
+
+        // Redirect to the new page
+        window.location.href = newPage;
+    });
+</script>
+</body>
+
+</html>
