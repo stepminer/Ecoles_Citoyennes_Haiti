@@ -230,31 +230,57 @@
         <section id="inscription">
             <h2>Inscrivez votre École :</h2>
     <p>Faites partie du changement, inscrivez votre école aujourd'hui!</p>
-	<p>Cliquez sur le <a href="https://chatgpt.com/canvas/shared/67b97b31b9588191bc2ce96c7c5732a8="_blank">FORMULAIRE D'INSCRIPTION ICI</a>.</p>
-            <img src="party.jpg" alt="Inscription">
-        </section>
-        <section id="partenaires">
-            <h2>Partenaires</h2>
+	<!--<p>Cliquez sur le <a href="https://chatgpt.com/canvas/shared/67b97b31b9588191bc2ce96c7c5732a8="_blank">FORMULAIRE D'INSCRIPTION ICI</a>.</p>-->
             
-             <img src="VETYE_LOGO_small40.jpg" alt="Collabore avec Le Collectif">
-                    <figcaption>Collabore avec Le Collectif</figcaption>
-                    <a href="https://vetye-1803.netlify.app/" target="_blank" rel="noopener noreferrer">vetye-1803.netlify.app</a>
-                    <img src="jeunesse2.jpg" alt="Supporté par Le Collectif">
-                    <figcaption>Supporté par Le Collectif</figcaption>
-                    <a href="https://jeunessedebouthaiti.org" target="_blank" rel="noopener noreferrer">jeunessedebouthaiti.org</a>       
-         </section>
+        </section>
+       
     </main>
 </section>
 
     <!-- Contact Section -->
     <section>
-        <h2>Nous Contacter</h2>
-        <div class="contact-form">
-            <input type="text" placeholder="Votre Nom">
-            <input type="email" placeholder="Votre Email">
-            <textarea rows="5" placeholder="Votre Message"></textarea>
-            <button type="submit">Envoyer</button>
+        <h2>FORMULAIRE D'INSCRIPTION</h2>
+        <form action="#" method="POST">
+            <label>Nom de l’établissement :</label>
+            <input type="text" name="nom_etablissement" required placeholder="Entrez le nom de votre établissement">
+            
+            <label>Type d’établissement :</label>
+            <select name="type_etablissement">
+                <option>Public</option>
+                <option>Privé</option>
+                <option>Confessionnel</option>
+                <option>Communautaire</option>
+            </select>
+            
+            <label>Région/Département :</label>
+            <input type="text" name="region" required placeholder="Entrez votre région ou département">
+            
+            <label>Adresse complète :</label>
+            <input type="text" name="adresse" required placeholder="Entrez l'adresse de l'école">
+            
+            <label>Nom du Directeur/Responsable :</label>
+            <input type="text" name="directeur" required placeholder="Nom du responsable">
+            
+            <label>Email de contact :</label>
+            <input type="email" name="email" required placeholder="Adresse email">
+            
+            <label>Numéro de téléphone :</label>
+            <input type="tel" name="telephone" required placeholder="Numéro de téléphone">
+            
+            <label>Nombre d’élèves participants :</label>
+            <input type="number" name="nb_eleves" required min="1">
+            
+            <label>Encadrants désignés :</label>
+            <textarea name="encadrants" required placeholder="Listez les encadrants de l'école"></textarea>
+            
+            <label>Engagement :</label>
+            <input type="checkbox" name="engagement1" required> Participer à au moins 3 activités du programme Jeunesse Debout<br>
+            <input type="checkbox" name="engagement2" required> Impliquer l'école dans les événements citoyens (Drapo Libète, Pyebwa Libète, Vertières Viktwa Libète et Soup Libète)
+            
+            <button type="submit" class="btn">Soumettre l’inscription</button>
+        </form>
 	</div>
+<img src="party.jpg" alt="Inscription">
 <p>Ou envoyez-nous un email directement à : <a href="mailto:info.mennanmen@gmail.com">info.mennanmen@gmail.com</a></p>
     </section>
 <section class="section blog-posts">
